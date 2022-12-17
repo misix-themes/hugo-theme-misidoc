@@ -1,0 +1,6 @@
+[build]
+command = "mkdir hugo-theme-misidoc && ls | grep -v '^hugo-theme-misidoc$' | xargs -I {} mv {} hugo-theme-misidoc && cd hugo-theme-misidoc/exampleSite && hugo"
+publish = "hugo-theme-misidoc/exampleSite/public"
+
+  [build.environment]
+  HUGO_VERSION = "0.110.0"
